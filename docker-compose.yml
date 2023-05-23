@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  rng_lab:
+    image: smartnexus/rng:latest
+    environment:
+        - OSM_USER=UVUS
+        - OSM_PROJECT=UVUS
+        - OSM_PASSWORD=dd-Mmmaa
+    volumes:
+      - ./data:/home/rng/
